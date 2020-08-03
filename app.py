@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
 
-app=Flask("my app")
+app=Flask(__name__)
 
 @app.route('/')
 def index():
