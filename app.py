@@ -39,7 +39,7 @@ def page():
         predicted=model.predict(input_variables)[0]
         return render_template('page.html', result=round(predicted,3))
 
-if __name__="__main__":
+if __name__=="__main__":
     app.run(debug=True)
     
 
